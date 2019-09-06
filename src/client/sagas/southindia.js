@@ -1,12 +1,12 @@
 import {  put, takeEvery } from 'redux-saga/effects';
 import * as actions from '../constants';
 import activities  from './activities.json';
-
+import _ from 'lodash';
 export function* initalize() {
   try {
     yield put({
       type: actions.SAVE,
-      activities: activities,
+      activities: _.sortBy(activities, ["image.date"]),
     });
   } catch (e) {
     yield put({ type: 'INITALIZE_APPLICATION_FAILED', number: null });

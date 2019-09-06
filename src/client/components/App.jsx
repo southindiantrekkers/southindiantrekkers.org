@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import Img from 'react-image'
 import _ from 'lodash'
 import '../styles/App.scss';
-import Gallery from './Gallery';
+import Gallery from './LightGallery';
+import { Grid, Row, Col, Label, PageHeader } from 'react-bootstrap'
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -13,17 +15,23 @@ export default class App extends React.Component {
   }
   renderGallery(state) {
     const images = _.get(this.props, `activities.${state.id}.timeline`, []);
-    return <Gallery images={images} open={state.openGallery} toggleGallery={() => {
+
+    return <Gallery images={_.map(images, (image)=>image.photo)} open={state.openGallery} toggleGallery={() => {
       this.setState({ openGallery: false });
     }} />;
   }
   renderActivities(activities) {
-    return _.map(activities, (x, i) => {
-      return <Img className="still" key={i} src={x.image.photo} onClick={() => this.setState({ id: i, openGallery: true })} />;
-    });
+    return <Grid>{_.map(activities, (x, i) => {
+      return <Row className="show-grid">
+        <Col>
+          <PageHeader>{x.title}  <small>{x.image.date}</small></PageHeader>
+          <Img className="still" key={i} src={x.image.photo} onClick={() => this.setState({ id: i, openGallery: true })} />
+        </Col>
+      </Row>
+    })}</Grid>;
   }
   render() {
-    return (<div className="container">
+    return (<div className="container-fluid">
       {this.renderActivities(this.props.activities)}
       {this.renderGallery(this.state)}
     </div>
