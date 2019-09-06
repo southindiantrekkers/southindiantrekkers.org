@@ -1,8 +1,7 @@
-<img src="https://raw.githubusercontent.com/prabaprakash/React-Redux-Saga-Boilerplate/master/doc/app.gif" alt="react redux boilerplate banner" align="center" />
 
 <br />
 
-<div align="center">Well Architect-ed React-Redux-Saga Boilerplate with pre-configured CI/CD & BDD & Unit/E2e - Automation Testing with all the industry best practices for Standard Product Development</div>
+<div align="center">South Indian Trekkers Club</div>
 
 <br />
 
