@@ -15,7 +15,7 @@ services:
       - traefik.backend=southindiantrekkers
       - traefik.frontend.rule=Host:southindiantrekkers.vaayadi.in
       - traefik.docker.network=proxy
-      - traefik.port=3000
+      - traefik.port=3200
     networks:
       - internal
       - proxy
