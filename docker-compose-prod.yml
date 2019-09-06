@@ -1,10 +1,21 @@
-version: '3'
+version: "3"
+
+networks:
+  proxy:
+    external: true
+  internal:
+    external: false
+
 services:
-  reactreduxsagawebapp:
-    build:
+  southindiantrekkers:
+    build: 
       context: .
-      dockerfile: Dockerfile.prod
-    ports:
-      - 80:3200
-    environment:
-      - NODE_ENV=prod
+      dockerfile: Dockerfile
+    labels:
+      - traefik.backend=southindiantrekkers
+      - traefik.frontend.rule=Host:southindiantrekkers.vaayadi.in
+      - traefik.docker.network=proxy
+      - traefik.port=3000
+    networks:
+      - internal
+      - proxy
