@@ -4,9 +4,17 @@
   background-color: #fff;
   text-transform: capitalize;
   text-align: left;
+  width: 0%;
   .btn {
     margin: 10px;
   }
+  .still {
+    display: block;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin: 0 auto;
+}
   .form-control {
     margin: 10px;
     display: unset;

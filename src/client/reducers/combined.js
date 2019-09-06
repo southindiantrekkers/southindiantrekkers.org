@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import  calc  from './calc';
+import  southindia  from './southindia';
 import { connectRouter } from 'connected-react-router'
 
 const combined= (history) => combineReducers({
-  calc,
+  southindia,
   router: connectRouter(history),
 });
 

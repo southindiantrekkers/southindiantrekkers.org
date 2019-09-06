@@ -1,5 +1,5 @@
 import { all } from 'redux-saga/effects';
-import * as watcher from './calc';
+import * as watcher from './southindia';
 export default function* rootSaga() {
-  yield all([watcher.addWatcher(), watcher.subWatcher(), watcher.changeWatcher(), watcher.initalizeWatcher()]);
+  yield all([watcher.initalizeWatcher()]);
 }

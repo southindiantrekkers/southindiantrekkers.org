@@ -4,7 +4,7 @@ const calc = (state = {}, action) => {
   switch (action.type) {
   case actions.SAVE:
     return Object.assign({}, state, {
-      number: action.number,
+      activities: action.activities,
     });
   default:
     return state;

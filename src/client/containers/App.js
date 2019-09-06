@@ -1,18 +1,14 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import App from '../components/App';
-import { add, sub, change } from '../actions';
 
 const mapStateToProps = state => ({
-  number: state.calc.number,
+  activities: state.southindia.activities,
 });
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
-      add,
-      sub,
-      change,
     },
     dispatch
   );
