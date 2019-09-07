@@ -4,7 +4,7 @@ import Img from 'react-image'
 import _ from 'lodash'
 import '../styles/App.scss';
 import Gallery from './LightGallery';
-import { Grid, Row, Col, Label, PageHeader } from 'react-bootstrap'
+import { Row, Col, Label, Container } from 'react-bootstrap'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -21,14 +21,14 @@ export default class App extends React.Component {
     }} />;
   }
   renderActivities(activities) {
-    return <Grid>{_.map(activities, (x, i) => {
+    return <Container>{_.map(activities, (x, i) => {
       return <Row className="show-grid">
         <Col>
-          <PageHeader>{x.title}  <small>{x.image.date}</small></PageHeader>
+          <div>{x.title}  <small>{x.image.date}</small></div>
           <Img className="still" key={i} src={x.image.photo} onClick={() => this.setState({ id: i, openGallery: true })} />
         </Col>
       </Row>
-    })}</Grid>;
+    })}</Container>;
   }
   render() {
     return (<div className="container-fluid">
