@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/App.scss';
 import PropTypes from 'prop-types';
 import ReactBnbGallery from 'react-bnb-gallery';
 export default class Gallery extends React.Component {

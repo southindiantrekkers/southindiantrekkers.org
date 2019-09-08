@@ -1,4 +1,6 @@
 .container {
+  display: flex;
+  flex-wrap: wrap;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-color: #fff;
@@ -20,5 +22,12 @@
     display: unset;
     width: unset;
     padding-bottom: 9px;
+  }
+}
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  .card{
+    flex-grow: 1;
   }
 }

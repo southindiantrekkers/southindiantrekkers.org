@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
-
+import './styles/Index.scss';
 import createRouteReducers from './reducers/combined';
 
 import rootSaga from './sagas/combined';
@@ -24,18 +24,16 @@ sagaMiddleware.run(rootSaga);
 export const action = type => store.dispatch({ type });
 action(actions.INITALIZE_APPLICATION);
 
-import AppContainer from './containers/App';
 import Error from './components/Error';
+import Home from './components/Home';
 
 render(
   <Provider store={store}>
     <ConnectedRouter history={history}> 
-      <div>
         <Switch>
-          <Route exact path="/" component={AppContainer}/>
+          <Route exact path="/" component={Home}/>
           <Route render={() => <Error/> } />
         </Switch>
-      </div>
     </ConnectedRouter>
   </Provider>,
   document.getElementById('app')
