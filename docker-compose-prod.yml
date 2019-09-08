@@ -1,4 +1,4 @@
-version: "3"
+version: '3'
 
 networks:
   proxy:
@@ -7,15 +7,19 @@ networks:
     external: false
 
 services:
-  southindiantrekkers:
-    build: 
+  www:
+    build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.prod
+    environment:
+      - NODE_ENV=prod
     labels:
-      - traefik.backend=southindiantrekkers
-      - traefik.frontend.rule=Host:southindiantrekkers.vaayadi.in
+      - traefik.backend=www
+      - traefik.frontend.rule=Host:www.southindiantrekkers.org,southindiantrekkers.org
+      - traefik.frontend.redirect.regex=^https?://www.southindiantrekkers.org/(.*)
+      - traefik.frontend.redirect.replacement=https://southindiantrekkers.org/$${1}
       - traefik.docker.network=proxy
-      - traefik.port=3200
+      - traefik.port=80
     networks:
       - internal
       - proxy
