@@ -15,11 +15,12 @@ services:
       - NODE_ENV=prod
     labels:
       - traefik.backend=www
-      - traefik.frontend.rule=Host:www.southindiantrekkers.org,southindiantrekkers.org
+      - traefik.frontend.rule=Host:www.southindiantrekkers.org,southindiantrekkers.org,southindiantrekkers.vaayadi.in
+      - traefik.frontend.rule=Host:southindiantrekkers.vaayadi.in
       - traefik.frontend.redirect.regex=^https?://www.southindiantrekkers.org/(.*)
       - traefik.frontend.redirect.replacement=https://southindiantrekkers.org/$${1}
       - traefik.docker.network=proxy
-      - traefik.port=80
+      - traefik.port=3200
     networks:
       - internal
       - proxy
