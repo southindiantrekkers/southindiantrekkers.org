@@ -16,9 +16,9 @@ const mapDispatchToProps = dispatch =>
         dispatch
     );
 
-const AppContainer = connect(
+const GalleryContainer = connect(
     mapStateToProps,
     mapDispatchToProps
 )(Gallery);
 
-export default AppContainer;
+export default GalleryContainer;

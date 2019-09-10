@@ -16,7 +16,6 @@ export default class LightGallery extends Component {
     render() {
         const { photoIndex } = this.state;
         const { open, images } = this.props;
-        console.log(this.props);
         return (
             <div>
                 {open && (
