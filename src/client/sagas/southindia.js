@@ -2,10 +2,12 @@ import { put, takeEvery, select } from 'redux-saga/effects';
 import * as actions from '../constants';
 import activities from './modifiedActivities.json';
 import _ from 'lodash';
+import { callFetch } from '../services/api'
 import { searchActivities } from '../utilities/search'
 export function* initalize() {
   try {
-    const master_activities = _.cloneDeep(_.sortBy(activities, ["image.date"]));
+    const get_master_activities = yield callFetch('https://cdn.jsdelivr.net/gh/southindiantrekkers/southindiantrekkers.org/src/client/sagas/modifiedActivities.json');
+    const master_activities = _.cloneDeep(_.sortBy(get_master_activities.response, ["image.date"]));
     yield put({
       type: actions.SAVE,
       master_activities,
