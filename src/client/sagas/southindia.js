@@ -1,6 +1,6 @@
 import { put, takeEvery, select } from 'redux-saga/effects';
 import * as actions from '../constants';
-import activities from './activities.json';
+import activities from './modifiedActivities.json';
 import _ from 'lodash';
 import { searchActivities } from '../utilities/search'
 export function* initalize() {
