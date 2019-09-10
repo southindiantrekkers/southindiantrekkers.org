@@ -1,5 +1,7 @@
 export const INITALIZE_APPLICATION = 'INITALIZE_APPLICATION';
-export const CHANGE = 'CHANGE';
-export const ADD = 'ADD';
-export const SUB = 'SUB';
+export const OPEN_GALLERY = 'OPEN_GALLERY';
+export const CLOSE_GALLERY = 'CLOSE_GALLERY';
+export const OPEN_GALLERY_SUCCESS = 'OPEN_GALLERY_SUCCESS';
+export const CLOSE_GALLERY_SUCCESS = 'CLOSE_GALLERY_SUCCESS';
 export const SAVE = 'SAVE';
+

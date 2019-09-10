@@ -2,6 +2,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import App from '../components/App';
 
+import { openGallery } from '../actions';
+
 const mapStateToProps = state => ({
   activities: state.southindia.activities,
 });
@@ -9,6 +11,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
+      openGallery
     },
     dispatch
   );

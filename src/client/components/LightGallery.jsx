@@ -24,7 +24,7 @@ export default class LightGallery extends Component {
                         mainSrc={images[photoIndex]}
                         nextSrc={images[(photoIndex + 1) % images.length]}
                         prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                        onCloseRequest={this.props.toggleGallery}
+                        onCloseRequest={this.props.closeGallery}
                         onMovePrevRequest={() =>
                             this.setState({
                                 photoIndex: (photoIndex + images.length - 1) % images.length,
@@ -45,5 +45,5 @@ export default class LightGallery extends Component {
 LightGallery.propTypes = {
     images: PropTypes.array,
     open: PropTypes.bool,
-    toggleGallery: PropTypes.func,
+    closeGallery: PropTypes.func,
 };

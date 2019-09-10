@@ -9,12 +9,12 @@ export default class Gallery extends React.Component {
         return <ReactBnbGallery
                 show= {this.props.open}
                 photos={this.props.images}
-                onClose={this.props.toggleGallery} />
+                onClose={this.props.closeGallery} />
     }
 }
 
 Gallery.propTypes = {
     images: PropTypes.array,
     open: PropTypes.bool,
-    toggleGallery: PropTypes.func,
+    closeGallery: PropTypes.func,
 };
