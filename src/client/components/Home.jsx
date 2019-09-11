@@ -1,9 +1,9 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Header from './Header';
 import AppContainer from '../containers/AppContainer';
 import Footer from './Footer';
 import SearchContainer from '../containers/SearchContainer';
+import HeaderContianer from '../containers/Header';
 export default class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -12,14 +12,11 @@ export default class Home extends React.Component {
     render() {
         return (
             <Container>
-                <Header/>
-                <SearchContainer/>
-                <AppContainer/>
-                <Footer/>
+                <HeaderContianer/>
+                <SearchContainer />
+                <AppContainer />
+                <Footer />
             </Container>
         );
     }
 }
-
-Home.propTypes = {
-};

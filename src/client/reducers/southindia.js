@@ -1,6 +1,6 @@
 import * as actions from '../constants';
 
-const calc = (state = {}, action) => {
+const southindia = (state = {}, action) => {
   switch (action.type) {
     case actions.SAVE:
       return Object.assign({}, state, {
@@ -30,4 +30,4 @@ const calc = (state = {}, action) => {
   }
 };
 
-export default calc;
+export default southindia;

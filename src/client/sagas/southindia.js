@@ -7,11 +7,13 @@ import { searchActivities } from '../utilities/search'
 export function* initalize() {
   try {
     const get_master_activities = yield callFetch('https://cdn.jsdelivr.net/gh/southindiantrekkers/southindiantrekkers.org/src/client/sagas/modifiedActivities.json');
-    const master_activities = _.cloneDeep(_.sortBy(get_master_activities.response, ["image.date"]));
+    const master_activities = _.cloneDeep(_.sortBy(get_master_activities.response, ["image.date"]).reverse());
+    const get_user_profile = yield callFetch('/profile');
     yield put({
       type: actions.SAVE,
       master_activities,
       activities: master_activities,
+      profile: get_user_profile.response,
     });
   } catch (e) {
     yield put({ type: 'INITALIZE_APPLICATION_FAILED', number: null });
