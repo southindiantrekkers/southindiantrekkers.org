@@ -1,19 +1,18 @@
 import { put, takeEvery, select } from 'redux-saga/effects';
 import * as actions from '../constants';
-import activities from './modifiedActivities.json';
 import _ from 'lodash';
 import { callFetch } from '../services/api'
-import { searchActivities } from '../utilities/search'
+import { searchActivities } from '../utilities/search';
 export function* initalize() {
   try {
     const get_master_activities = yield callFetch('https://cdn.jsdelivr.net/gh/southindiantrekkers/southindiantrekkers.org/src/client/sagas/modifiedActivities.json');
-    const master_activities = _.cloneDeep(_.sortBy(get_master_activities.response, ["image.date"]).reverse());
-    const get_user_profile = yield callFetch('/profile');
+    const master_activities = _.cloneDeep(_.sortBy(get_master_activities.response, ["image.date"]));
+    // const get_user_profile = yield callFetch('/profile');
     yield put({
       type: actions.SAVE,
       master_activities,
       activities: master_activities,
-      profile: get_user_profile.response,
+      // profile: get_user_profile.response,
     });
   } catch (e) {
     yield put({ type: 'INITALIZE_APPLICATION_FAILED', number: null });

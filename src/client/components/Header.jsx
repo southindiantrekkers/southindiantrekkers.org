@@ -31,7 +31,7 @@ export default class Header extends React.Component {
                 />
                 {'South Indian Trekkers Club'}
             </Navbar.Brand>
-            {_.get(this.props.profile, 'isAuthenticated', false) ? this.renderProfile() : this.renderLoginButton()}
+            {/* {_.get(this.props.profile, 'isAuthenticated', false) ? this.renderProfile() : this.renderLoginButton()} */}
         </Navbar>
         );
     }
