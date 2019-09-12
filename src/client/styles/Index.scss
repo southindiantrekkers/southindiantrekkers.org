@@ -30,6 +30,13 @@
     flex-grow: 1;
   }
   .brief {
+    overflow: hidden;
     text-transform: none;
+    text-overflow: ellipsis;
+    display: -webkit-box;   
+    -webkit-line-clamp: 3; /* Write the number of 
+                              lines you want to be 
+                              displayed */
+    -webkit-box-orient: vertical;
   }
 }
