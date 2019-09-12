@@ -7,22 +7,22 @@
 
 <div align="center">
   <!-- Dependency Status -->
-  <a href="https://david-dm.org/prabaprakash/React-Redux-Saga-Boilerplate">
-    <img src="https://david-dm.org/prabaprakash/React-Redux-Saga-Boilerplate.svg" alt="Dependency Status" />
+  <a href="https://david-dm.org/southindiantrekkers/southindiantrekkers.org">
+    <img src="https://david-dm.org/southindiantrekkers/southindiantrekkers.org.svg" alt="Dependency Status" />
   </a>
   <!-- devDependency Status -->
-  <a href="https://david-dm.org/prabaprakash/React-Redux-Saga-Boilerplate#info=devDependencies">
-    <img src="https://david-dm.org/prabaprakash/React-Redux-Saga-Boilerplate/dev-status.svg" alt="devDependency Status" />
+  <a href="https://david-dm.org/southindiantrekkers/southindiantrekkers.org#info=devDependencies">
+    <img src="https://david-dm.org/southindiantrekkers/southindiantrekkers.org/dev-status.svg" alt="devDependency Status" />
   </a>
   <!-- Build Status -->
-  <a href="https://travis-ci.org/prabaprakash/Awesome-React-Redux-Saga-Boilerplate">
-    <img src="https://travis-ci.org/prabaprakash/Awesome-React-Redux-Saga-Boilerplate.svg" alt="Build Status" />
+  <a href="https://travis-ci.org/southindiantrekkers/southindiantrekkers.org">
+    <img src="https://travis-ci.org/southindiantrekkers/southindiantrekkers.org.svg" alt="Build Status" />
   </a>
-  <a href="https://circleci.com/gh/prabaprakash/React-Redux-Saga-Boilerplate/tree/master">
-    <img src="https://circleci.com/gh/prabaprakash/React-Redux-Saga-Boilerplate/tree/master.svg?style=svg" alt="Build Status" />
+  <a href="https://circleci.com/gh/southindiantrekkers/southindiantrekkers.org/tree/master">
+    <img src="https://circleci.com/gh/southindiantrekkers/southindiantrekkers.org/tree/master.svg?style=svg" alt="Build Status" />
   </a>
-  <a href='https://coveralls.io/github/prabaprakash/React-Redux-Saga-Boilerplate?branch=master'>
-    <img src='https://coveralls.io/repos/github/prabaprakash/React-Redux-Saga-Boilerplate/badge.svg?branch=master' alt='Coverage Status' /></a>
+  <a href='https://coveralls.io/github/southindiantrekkers/southindiantrekkers.org?branch=master'>
+    <img src='https://coveralls.io/repos/github/southindiantrekkers/southindiantrekkers.org/badge.svg?branch=master' alt='Coverage Status' /></a>
     <a href='http://52.187.134.188:8080/dashboard?id=praba'>
     <img src='http://52.187.134.188:8080/api/project_badges/measure?project=praba&metric=alert_status' alt='Coverage Status' /></a>
   <!-- Gitter 
