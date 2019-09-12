@@ -14,8 +14,8 @@ export default class App extends React.Component {
         <Card.Img variant="top" src={x.image.thumbnail} />
         <Card.Body>
           <Card.Title>{x.title}  <small>{x.image.date}</small> </Card.Title>
-          <Card.Text>
-
+          <Card.Text className="brief">
+              {x.brief}
           </Card.Text>
           <Button variant="primary" onClick={() => this.props.openGallery({ id: i, openGallery: true })}>View Images</Button>
         </Card.Body>
