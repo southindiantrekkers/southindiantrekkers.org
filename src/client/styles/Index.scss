@@ -1,42 +1,12 @@
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  background-color: #fff;
-  text-transform: capitalize;
-  text-align: left;
-  .btn {
-    margin: 10px;
-  }
-  img.d-inline-block.align-top {
-    margin-right: 10px;
-  }
-  .form-control {
-    margin: 10px;
-    display: unset;
-    width: unset;
-    padding-bottom: 9px;
-  }
-  .profile{
-    width: 30px;
-    height: 30px;
-  }
+body{
+  margin: 0;
 }
-.container-fluid {
-  display: flex;
-  flex-wrap: wrap;
-  .card{
-    flex-grow: 1;
-  }
-  .brief {
-    overflow: hidden;
-    text-transform: none;
-    text-overflow: ellipsis;
-    display: -webkit-box;   
-    -webkit-line-clamp: 3; /* Write the number of 
-                              lines you want to be 
-                              displayed */
-    -webkit-box-orient: vertical;
+
+.card{
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+  .card-img-top{
+    height: 200px;
+    object-fit: cover;
   }
 }
