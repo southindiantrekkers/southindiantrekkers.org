@@ -13,6 +13,8 @@ export const searchActivities = (list, searchText) => {
         minMatchCharLength: 1,
         keys: [
             "title",
+            "brief",
+            "image.date"
         ]
     };
     var fuse = new Fuse(list, options); // "list" is the item array
