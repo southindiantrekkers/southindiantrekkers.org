@@ -4,14 +4,21 @@ import 'react-image-lightbox/style.css';
 import PropTypes from 'prop-types';
 
 export default class LightGallery extends Component {
+    static getDerivedStateFromProps(props, state) {
+        if (props.images[0] !== state.firstImage) {
+            return {
+                photoIndex: 0,
+                firstImage: props.images[0],
+            };
+        }
+        return null;
+    }
     constructor(props) {
         super(props);
         this.state = {
             photoIndex: 0,
+            firstImage: "",
         };
-    }
-    componentWillReceiveProps(nextProps) {
-        this.setState({ photoIndex: 0 });
     }
     render() {
         const { photoIndex } = this.state;
