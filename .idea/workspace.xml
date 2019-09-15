@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f77712-2cf1-4488-b10b-504c56703100" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/client/styles/Index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/styles/Index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/components/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/components/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/components/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Search.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/styles/Index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/Index.scss" afterDir="false" />
     </list>
     <ignored path="C:\Users\dell\Documents\southindiantrekkers.org\src\dist\public/" />
@@ -32,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/components/Search.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -44,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/client/styles/Index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="374">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -244,12 +237,12 @@
       <option name="presentableId" value="Default" />
       <updated>1568397419279</updated>
       <workItem from="1568397423676" duration="2957000" />
-      <workItem from="1568523352935" duration="6740000" />
+      <workItem from="1568523352935" duration="7068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12287000" />
+    <option name="totallyTimeSpent" value="12615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -357,13 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/styles/Index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/components/Search.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -371,6 +357,13 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/styles/Index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
         </state>
       </provider>
     </entry>

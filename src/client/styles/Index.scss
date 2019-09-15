@@ -19,6 +19,10 @@ h5, .h5 {
   box-shadow: 0px 16px 28px 1px #f0f0f0;
 }
 
+.sticky-top {
+  z-index: 1 !important;
+}
+
 .avatar {
   border-radius: 2.5rem;
   margin-right: 0.5rem;
