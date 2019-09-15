@@ -5,18 +5,18 @@ import Footer from './Footer';
 import SearchContainer from '../containers/SearchContainer';
 import HeaderContianer from '../containers/Header';
 export default class Home extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    render() {
-        return (
-            <Container>
-                <HeaderContianer/>
-                <SearchContainer />
-                <AppContainer />
-                <Footer />
-            </Container>
-        );
-    }
+  render() {
+    return (
+      <div className="container-fluid">
+        <HeaderContianer/>
+        <SearchContainer />
+        <AppContainer />
+        <Footer />
+      </div>
+    );
+  }
 }
