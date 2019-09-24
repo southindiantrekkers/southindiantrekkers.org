@@ -32,7 +32,7 @@ render(
     <ConnectedRouter history={history}> 
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route render={() => <Error/> } />
+          <Route component={Error} />
         </Switch>
     </ConnectedRouter>
   </Provider>,

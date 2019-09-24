@@ -13,7 +13,7 @@ export default class App extends React.Component {
   renderActivitiesCards(activities) {
     return <Row>{_.map(activities, (x, i) => <Col key={i} sm={4}>
       <Card>
-        <Card.Img variant="top" src={x.image.thumbnail}/>
+        <Card.Img alt={x.title} variant="top" src={x.image.thumbnail}/>
         <Card.Body>
           <Card.Title className="card-title">{x.title}</Card.Title>
           <small className="mb-3">{x.image.date}</small>
