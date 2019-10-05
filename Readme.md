@@ -6,9 +6,10 @@
 <br />
 
 <div align="center">
-![Home](https://raw.githubusercontent.com/southindiantrekkers/southindiantrekkers.org/master/pic/Southindiantrekker%20%281%29.png  =350x750`)
+ 
+ <img src="https://raw.githubusercontent.com/southindiantrekkers/southindiantrekkers.org/master/pic/Southindiantrekker%20%281%29.png" alt="home" align="center" width="300" height="750" />
+  <img src="https://raw.githubusercontent.com/southindiantrekkers/southindiantrekkers.org/master/pic/Southindiantrekker%20%282%29.png" alt="home" align="center" width="300" height="750" />
 
-![Pic](https://raw.githubusercontent.com/southindiantrekkers/southindiantrekkers.org/master/pic/Southindiantrekker%20%282%29.png  =350x7500`)
 
 
 </div>
