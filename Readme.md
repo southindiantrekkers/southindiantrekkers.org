@@ -10,14 +10,7 @@
  <img src="https://raw.githubusercontent.com/southindiantrekkers/southindiantrekkers.org/master/pic/Southindiantrekker%20%281%29.png" alt="home" align="center" width="350" height="750" />
   <img src="https://raw.githubusercontent.com/southindiantrekkers/southindiantrekkers.org/master/pic/Southindiantrekker%20%282%29.png" alt="home" align="center" width="350" height="750" />
 
-
-
 </div>
-
-<div align="center">
-  <sub>Created by <a href="https://www.linkedin.com/in/prabaprakash">Praba Prakash</a></sub>
-</div>
-
 # Pre-requisites:
   *  Node v8.9.4
   *  PM2        : `npm install -g pm2`
