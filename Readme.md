@@ -7,8 +7,8 @@
 
 <div align="center">
  
- <img src="https://raw.githubusercontent.com/southindiantrekkers/southindiantrekkers.org/master/pic/Southindiantrekker%20%281%29.png" alt="home" align="center" width="300" height="750" />
-  <img src="https://raw.githubusercontent.com/southindiantrekkers/southindiantrekkers.org/master/pic/Southindiantrekker%20%282%29.png" alt="home" align="center" width="300" height="750" />
+ <img src="https://raw.githubusercontent.com/southindiantrekkers/southindiantrekkers.org/master/pic/Southindiantrekker%20%281%29.png" alt="home" align="center" width="350" height="750" />
+  <img src="https://raw.githubusercontent.com/southindiantrekkers/southindiantrekkers.org/master/pic/Southindiantrekker%20%282%29.png" alt="home" align="center" width="350" height="750" />
 
 
 
@@ -26,7 +26,6 @@
   * `npm install`  to download dependencies
   * `npm run start` start the application in watch mode for server side code and client side code with webpack
   * Open http://localhost:3200/ to see the application in normal mode
-```shell
 
 ### License
 Copyright (c) 2018 South Indian Trekkers, contributors.
