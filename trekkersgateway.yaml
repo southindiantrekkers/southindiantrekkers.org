@@ -1,0 +1,35 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: trekkers-gateway
+  namespace: default
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 80
+      name: http-trekkers
+      protocol: HTTP
+    hosts:
+    - "*"
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: trekkers-vs
+  namespace: default
+spec:
+  hosts:
+  - "www.southindiantrekkers.org"
+  gateways:
+  - trekkers-gateway
+  http:
+   - match:
+     - uri:
+        prefix: /
+     route:
+     - destination:
+        port:
+          number: 80
+        host: trekkers
