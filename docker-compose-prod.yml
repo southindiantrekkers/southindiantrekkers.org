@@ -12,7 +12,10 @@ services:
       context: .
       dockerfile: Dockerfile.prod
     environment:
-      - NODE_ENV=prod
+      - NODE_ENV=prod      
+      - MONGO_DB_URL=${MONGO_DB_URL}
+      - MONGO_DB_NAME=${MONGO_DB_NAME}
+      - MONGO_DB_COLLECTION_NAME=${MONGO_DB_COLLECTION_NAME}
     labels:
       - traefik.backend=www
       - traefik.frontend.rule=Host:www.southindiantrekkers.org,southindiantrekkers.org
