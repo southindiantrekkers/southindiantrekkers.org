@@ -1,6 +1,10 @@
 'use strict';
 const express = require('express');
 const app = express();
+require('./db').then(db => {
+  app.locals.db = db;
+})
+const config = require('./config');
 const path = require('path');
 const fs = require('fs');
 const rp = require('request-promise');
@@ -30,6 +34,13 @@ app.get('/profile', (req, res) => {
   res.send({ isAuthenticated: req.isAuthenticated(), user: req.user });
 })
 app.use('/api', api);
+
+app.get("/activities", async (req, res) => {
+  const db = app.locals.db;
+  console.log(config);
+  const activities = await db.db(config.MONGO_DB_NAME).collection(config.MONGO_DB_COLLECTION_NAME).find().toArray();
+  res.json({ activities });
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
