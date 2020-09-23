@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./Dockerfile
+          file: ./Dockerfile.prod
           platforms: linux/amd64
           push: true
           tags: prabakaran/southindiantrekkers:latest
