@@ -2,7 +2,8 @@ FROM node:alpine
 COPY . /app
 WORKDIR /app
 
-RUN mkdir -p logs && \
+RUN apk add python && \
+    mkdir -p logs && \
     npm install && \
     npm install pm2 -g && \
     npm run dev

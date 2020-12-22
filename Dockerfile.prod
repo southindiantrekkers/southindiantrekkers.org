@@ -1,7 +1,8 @@
 FROM node:alpine AS build
 COPY . /app
 WORKDIR /app
-RUN mkdir -p logs && \
+RUN apk add --update python alpine-sdk  && \
+    mkdir -p logs && \
     npm install && \
     npm install pm2 -g && \
     npm run prod
@@ -11,7 +12,7 @@ COPY --from=build /app/src/dist /app/src/dist
 COPY --from=build /app/src/server /app/src/server
 COPY --from=build /app/package.json /app/package.json
 WORKDIR /app
-RUN npm install --production && \
+RUN apk add --update python alpine-sdk && npm install --production && \
     npm install pm2 -g  
 EXPOSE 3200
 CMD npm run serve && pm2 logs
