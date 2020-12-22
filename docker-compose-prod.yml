@@ -8,9 +8,7 @@ networks:
 
 services:
   www:
-    build:
-      context: .
-      dockerfile: Dockerfile.prod
+    image: prabakaran/southindiantrekkers.org  
     environment:
       - NODE_ENV=prod      
       - MONGO_DB_URL=${MONGO_DB_URL}
