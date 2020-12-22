@@ -1,9 +1,8 @@
-FROM node:alpine
+FROM node:8.11.4-stretch
 COPY . /app
 WORKDIR /app
 
-RUN apk add python && \
-    mkdir -p logs && \
+RUN mkdir -p logs && \
     npm install && \
     npm install pm2 -g && \
     npm run dev
