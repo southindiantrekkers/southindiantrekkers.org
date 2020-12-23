@@ -5,8 +5,9 @@ import { callFetch } from '../services/api'
 import { searchActivities } from '../utilities/search';
 export function* initalize() {
   try {
-    const get_master_activities = yield callFetch('https://cdn.jsdelivr.net/gh/southindiantrekkers/southindiantrekkers.org/src/client/sagas/modifiedActivities.json');
-    const master_activities = _.sortBy(get_master_activities.response, ["image.date"]).reverse();
+    const data = yield callFetch('/activities');
+    const master_activities = _.sortBy(data.response.activities, ["image.date"]).reverse();
+   
     // const get_user_profile = yield callFetch('/profile');
     yield put({
       type: actions.SAVE,

@@ -13,7 +13,7 @@
 
 # Start Application:
   * `npm install`  to download dependencies
-  * `npm run start` start the application in watch mode for server side code and client side code with webpack
+  * `npm run start` start the application in watch mode for server side code and client side code.with webpack
   * Open http://localhost:3200/ to see the application in normal mode
 
 ### License
