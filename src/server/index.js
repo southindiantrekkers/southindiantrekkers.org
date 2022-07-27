@@ -37,7 +37,6 @@ app.use('/api', api);
 
 app.get("/activities", async (req, res) => {
   const db = app.locals.db;
-  console.log(config);
   const activities = await db.db(config.MONGO_DB_NAME).collection(config.MONGO_DB_COLLECTION_NAME).find().toArray();
   res.json({ activities });
 });
