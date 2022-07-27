@@ -1,11 +1,11 @@
-FROM node:alpine AS build
+FROM node:12.22.12-buster-slim AS build
 COPY . /app
 WORKDIR /app
 RUN mkdir -p logs && \
     npm install && \
     npm install pm2 -g && \
     npm run prod
-FROM node:alpine
+FROM node:12.22.12-buster-slim
 RUN mkdir -p app && mkdir -p app/src
 COPY --from=build /app/src/dist /app/src/dist
 COPY --from=build /app/src/server /app/src/server
