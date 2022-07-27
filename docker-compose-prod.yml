@@ -8,7 +8,7 @@ networks:
 
 services:
   www:
-    image: prabakaran/southindiantrekkers.org  
+    image: prabakaran/southindiantrekkers
     environment:
       - NODE_ENV=prod      
       - MONGO_DB_URL=${MONGO_DB_URL}
