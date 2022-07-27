@@ -16,7 +16,6 @@ module.exports = {
       path: path.join(BUILD_DIR, '[name]-manifest.json'),
       name: '[name]',
     }),
-    new webpack.optimize.OccurrenceOrderPlugin(),
   ],
   optimization: {
     minimizer: [

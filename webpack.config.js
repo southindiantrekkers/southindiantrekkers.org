@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 require('babel-polyfill');
 
@@ -29,10 +29,7 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader'],
-        }),
+        use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
     ],
   },
@@ -40,7 +37,10 @@ module.exports = {
     extensions: ['*', '.js', '.jsx'],
   },
   plugins: [
-    new ExtractTextPlugin('bundle.css'),
+    new MiniCssExtractPlugin({
+      filename: "bundle.css",
+      chunkFilename: "[name].css"
+    }),
     new webpack.DllReferencePlugin({
       manifest: require(path.join(BUILD_DIR, 'lib-manifest.json')),
       extensions: ['.js', '.jsx'],
